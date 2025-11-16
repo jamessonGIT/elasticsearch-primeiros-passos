@@ -44,6 +44,12 @@ cd elasticsearch-primeiros-passos/
 ```bash
 docker compose -p elasticsearch -f docker-compose.yaml up -d
 ```
+### Conectando e Acessando Via Python:
+
++ Instalando a biblioteca elasticsearch na sua venv
+````bash
+sudo apt install -y python3-elasticsearch
+````
 
 ### Acessando o Dev Tools (Kibana)
 
