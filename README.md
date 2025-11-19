@@ -50,11 +50,11 @@ docker compose -p elasticsearch -f docker-compose.yaml up -d
 ````bash
 sudo apt install -y python3-elasticsearch
 ````
- + Testa a conexão (conexao.py)
->es = Elasticsearch(hosts = ["http://localhost:9200"], 
->                   basic_auth=("elastic", "nY5AQz37ZZIfMev9nY5AQz37ZZIfMev9")
-                   
->print(es.info())
+````bash
+source venv/bin/activate
+````
+ + Testa a conexão ( script conexao.py)
+>https://github.com/jamessonGIT/elasticsearch-primeiros-passos/blob/jamessonGIT-patch-1/conexao.py
 
 
 ### Acessando o Dev Tools (Kibana)
