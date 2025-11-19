@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
 
-# 
-
-#sudo apt install -y python3 python3-elasticsearch
-
 #Importando a biblioteca Elasticsearch
 
 from elasticsearch import Elasticsearch as es 
@@ -21,3 +17,4 @@ print(es.info())
 #curl -XGET "localhost:9200/_cat/indices?v" 
 
 #curl -XGET "localhost:9200/nome_do_indice/_search?pretty" -H 'Content-Type: application/json' -d'
+
