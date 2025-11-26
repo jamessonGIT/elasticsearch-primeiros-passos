@@ -1,0 +1,92 @@
+[
+  {
+      "id": 1,
+      "mapeamento": "bronze",
+      "tipo": "pasta",
+      "clasificacao_companhia": null,
+      "nome": null,
+      "zona": "bronze",
+      "dono": null,
+      "descricao": null
+  },
+  {
+      "id": 2,
+      "mapeamento": "bronze/pastateste",
+      "tipo": "pasta",
+      "clasificacao_companhia": null,
+      "nome": null,
+      "zona": null,
+      "dono": null,
+      "descricao": null
+  },
+  {
+      "id": 3,
+      "mapeamento": "bronze/pastateste",
+      "tipo": "dado",
+      "clasificacao_companhia": "restrita",
+      "nome": "dado1.data",
+      "zona": null,
+      "dono": {"nome": "Random Name", "email":"random.name@dominio.com"},
+      "descricao": "Dado de teste 1"
+  },
+  {
+      "id": 4,
+      "mapeamento": "bronze/pastateste",
+      "tipo": "dado",
+      "clasificacao_companhia": "restrita",
+      "nome": "dado2.data",
+      "zona": null,
+      "dono": {"nome": "Random Name", "email":"random.name@dominio.com"},
+      "descricao": "Dado de teste 2"
+  },
+  {
+      "id": 5,
+      "mapeamento": "bronze/testfolder",
+      "tipo": "pasta",
+      "clasificacao_companhia": null,
+      "nome": null,
+      "zona": null,
+      "dono": null,
+      "descricao": null
+  },
+  {
+      "id": 6,
+      "mapeamento": "bronze/testfolder",
+      "tipo": "dado",
+      "clasificacao_companhia": "restrita",
+      "nome": "dado1.data",
+      "zona": null,
+      "dono": {"nome": "Random Name", "email":"random.name@dominio.com"},
+      "descricao": "Dado de teste 1"
+  },
+  {
+      "id": 7,
+      "mapeamento": "bronze/testfolder",
+      "tipo": "dado",
+      "clasificacao_companhia": "restrita",
+      "nome": "dado2.data",
+      "zona": null,
+      "dono": {"nome": "Random Name", "email":"random.name@dominio.com"},
+      "descricao": "Dado de teste 2"
+  },
+  {
+      "id": 8,
+      "mapeamento": "bronze/testfolder/outrapasta",
+      "tipo": "pasta",
+      "clasificacao_companhia": null,
+      "nome": null,
+      "zona": null,
+      "dono": null,
+      "descricao": "Dado de teste 2"
+  },
+  {
+      "id": 9,
+      "mapeamento": "bronze/testfolder/outrapasta",
+      "tipo": "dado",
+      "clasificacao_companhia": "restrita",
+      "nome": "dadooutrapasta.data",
+      "zona": null,
+      "dono": {"nome": "Random Name", "email":"random.name@dominio.com"},
+      "descricao": "Dado de que ta na outra pasta"
+  }
+]
