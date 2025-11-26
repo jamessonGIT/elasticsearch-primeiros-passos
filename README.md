@@ -7,10 +7,8 @@ https://www.youtube.com/@renato-coelho
 -->
 
 # Apresentação em vídeo
++ https://youtu.be/llnqc-2cZfw
 
-<p align="center">
-  <a href="https://youtu.be/llnqc-2cZfw" target="_blank"><img src="thumbnail/ElasticSearchPrimeirosPassos.png" alt="Vídeo de apresentação"></a>
-</p>
 
 
 ### Requisitos
