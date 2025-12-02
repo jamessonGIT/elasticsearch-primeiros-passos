@@ -7,12 +7,14 @@ es = Elasticsearch(hosts = ["http://localhost:9200"],
                    
                    
                     )
+
 es_status = es
 
-# Caminho do arquivo JSON
+#====================================Caminho do arquivo JSON==================================================
+
 caminho_arquivo = "base_demo.json"
 
-# Abrir e carregar o conteúdo do arquivo
+#=============================Abrir e carregar o conteúdo do arquivo JSON=====================================
 with open(caminho_arquivo, "r", encoding="utf-8") as f:
     dados = json.load(f)
 
@@ -45,3 +47,4 @@ res = es.search(index=index_name, query={"match_all": {}})
 # Exibir resultados
 for hit in res["hits"]["hits"]:
     print(hit["_source"])
+
