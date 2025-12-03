@@ -27,13 +27,15 @@ with open(caminho_arquivo, "r", encoding="utf-8") as f:
 #=====================================Criação do índice=======================================================
 index_name = "meu_indice"
 
-# Criar índice (opcional, se não existir)
+# Criar índice 
 if not es.indices.exists(index=index_name):
     es.indices.create(index=index_name)
-
+    
+# Inserir documentos se for lista
 if isinstance(dados, list):
     for i, doc in enumerate(dados):
         es.index(index=index_name, id=i+1, document=doc)
+    print(f"{len(dados)} documentos inseridos no índice '{index_name}'.")
 else:
     # Se for um único objeto JSON
     es.index(index=index_name, document=dados)
@@ -46,6 +48,4 @@ res = es.search(index=index_name, query={"match_all": {}})
 # Exibir resultados
 for hit in res["hits"]["hits"]:
     print(hit["_source"])
-
-
 
