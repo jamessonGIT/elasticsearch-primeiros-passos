@@ -1,23 +1,30 @@
+#====================================== O que este código faz:================================================
+#-Conecta ao Elasticsearch.
+#-Verifica se o índice existe (es.indices.exists).
+#-Cria o índice apenas se ele não existir.
+#-Insere documentos numerando os IDs automaticamente.
+#-Busca simples (todos os documentos)
 
 from elasticsearch import Elasticsearch
 import json
+import csv
 
-#=================================Cria Conexão com ElasticSearch============================================
+#=================================Cria Conexão com ElasticSearch==============================================
 es = Elasticsearch(hosts = ["http://localhost:9200"], 
                    basic_auth=("elastic", "nY5AQz37ZZIfMev9nY5AQz37ZZIfMev9")
                               
                     )
 es_status = es
 
-#====================================Caminho do arquivo JSON==================================================
+#=============================Caminho do arquivo JSON=========================================================
 
 caminho_arquivo = "base_demo.json"
 
-#=============================Abrir e carregar o conteúdo do arquivo JSON=====================================
+#=============================Abrir e carregar o conteúdo do arquivo==========================================
 with open(caminho_arquivo, "r", encoding="utf-8") as f:
     dados = json.load(f)
 
-#=====================================Criação do índice========================================================
+#=====================================Criação do índice=======================================================
 index_name = "meu_indice"
 
 # Criar índice (opcional, se não existir)
@@ -33,11 +40,12 @@ else:
 
 print("Dados inseridos no Elasticsearch!")
 
-# Busca simples (todos os documentos)
+#===================================Busca simples (todos os documentos)=======================================
 res = es.search(index=index_name, query={"match_all": {}})
 
 # Exibir resultados
 for hit in res["hits"]["hits"]:
     print(hit["_source"])
+
 
 
